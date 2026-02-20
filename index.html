@@ -217,6 +217,7 @@
             
             // Image Generation
             { category: "Image Generation", title: "Anime Studio Art", text: "Use this reference image and generate an anime style character with high quality studio art.\nGenerate a full body character (extend the missing areas of the body)\nCreate 4 vertical slices of different poses by this character with number on each slice(top)\nExtract main assets like glasses, hairstyle, dress from the character to create elements\nAdd the name sunglasses in the center of image and show front side back and top view on four corners (with label, front side back and top)\nReplace the character in the car with the one in white background" },
+            { category: "Image Generation", title: "Scene Reference Context", text: "Make in reference with the scene and context attached in the background." },
             
             // Developer Tools
             { category: "Developer Tools", title: "Code Theme Copier", text: "{ORIGINAL_FILE}=\n{SAMPLE_STYLE_FILE}=\n## TASK\nCopy the visual style and theme from {SAMPLE_STYLE_FILE} to visually update style of {ORIGINAL_FILE}\n## STRICT RULES\n- Match theme tokens, color palette, font scale, UI density\n- Preserve exactly 100% Functionality (No logic changes)\n- Output ONLY the code, no markdown explanations." },
@@ -242,24 +243,24 @@
             { category: "Anime", title: "Character Car Replace", text: "Replace the character in the car with the one in white background." },
 
             // Drone Shots
-            { category: "Drone Shots", title: "Zoom Out Pan Right", text: "Zoom out and pan sideways towards the right — big park on the right side. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Zoom Out Pan Left", text: "Zoom out and pan sideways towards the left. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Side-to-Side Slider", text: "Side-to-Side / Slider: Moving horizontally (like a camera on a slider) for smooth, cinematic, and simple motion. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Tilt Reveal / Vertical Pan", text: "Tilt Reveal / Vertical Pan: Moving forward while slowly tilting the camera from the ground up to the horizon. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Hyperlapse", text: "Hyperlapse: An aerial timelapse that shows accelerated movement, ideal for sunrises or traffic. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Pedestal / Boom Up", text: "Pedestal / Boom Up: Moving the drone straight up or down while keeping the camera horizontal. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Fly-Through", text: "Fly-Through: Flying through a narrow space, such as a window, archway, or trees, to add high-energy motion. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Pull-Away / Pullback", text: "Pull-Away / Pullback: Flying backward and away to reveal more of the environment. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Push-In / Dolly In", text: "Push-In / Dolly In: Flying forward towards a subject. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Top-Down (God's Eye View)", text: "Top-Down (God's Eye View): The camera points directly 90° downward, creating a flat, map-like perspective. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Dronie", text: "Dronie: A 'drone selfie' where the camera starts close on a subject and flies backward and upward to reveal the surroundings. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Tracking Shot (Follow/Lead)", text: "Tracking Shot (Follow/Lead): The drone follows a moving subject (like a car or person) from behind, in front, or the side. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Cinematic Orbit (360 Wraparound)", text: "The Orbit (360 Wraparound): The drone circles a subject, keeping it centered for a dramatic effect. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Cinematic Dronie", text: "The Dronie: A drone 'selfie' starting close on a subject, then flying backward and upward to reveal the surroundings. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Cinematic Top-Down / Bird's-Eye", text: "Top-Down / Bird's-Eye View: Camera pointed 90° straight down, creating a graphic, map-like perspective. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Reveal Shot / Unveiling", text: "Reveal Shot / Unveiling: Moving from behind an object (like a tree or building) to show a new, expansive scene. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Cinematic Tracking / Follow Shot", text: "Tracking / Follow Shot: The drone follows a moving subject (car, person) to track their movement through a landscape. Make in reference with the scene and context attached in the background." },
-            { category: "Drone Shots", title: "Parallax / Vertigo Effect", text: "Parallax / Vertigo Effect: Moving sideways or backward while keeping the camera locked on a subject, creating a shift in perspective between foreground and background. Make in reference with the scene and context attached in the background." }
+            { category: "Drone Shots", title: "Zoom Out Pan Right", text: "Zoom out and pan sideways towards the right — big park on the right side." },
+            { category: "Drone Shots", title: "Zoom Out Pan Left", text: "Zoom out and pan sideways towards the left." },
+            { category: "Drone Shots", title: "Side-to-Side Slider", text: "Side-to-Side / Slider: Moving horizontally (like a camera on a slider) for smooth, cinematic, and simple motion." },
+            { category: "Drone Shots", title: "Tilt Reveal / Vertical Pan", text: "Tilt Reveal / Vertical Pan: Moving forward while slowly tilting the camera from the ground up to the horizon." },
+            { category: "Drone Shots", title: "Hyperlapse", text: "Hyperlapse: An aerial timelapse that shows accelerated movement, ideal for sunrises or traffic." },
+            { category: "Drone Shots", title: "Pedestal / Boom Up", text: "Pedestal / Boom Up: Moving the drone straight up or down while keeping the camera horizontal." },
+            { category: "Drone Shots", title: "Fly-Through", text: "Fly-Through: Flying through a narrow space, such as a window, archway, or trees, to add high-energy motion." },
+            { category: "Drone Shots", title: "Pull-Away / Pullback", text: "Pull-Away / Pullback: Flying backward and away to reveal more of the environment." },
+            { category: "Drone Shots", title: "Push-In / Dolly In", text: "Push-In / Dolly In: Flying forward towards a subject." },
+            { category: "Drone Shots", title: "Top-Down (God's Eye View)", text: "Top-Down (God's Eye View): The camera points directly 90° downward, creating a flat, map-like perspective." },
+            { category: "Drone Shots", title: "Dronie", text: "Dronie: A 'drone selfie' where the camera starts close on a subject and flies backward and upward to reveal the surroundings." },
+            { category: "Drone Shots", title: "Tracking Shot (Follow/Lead)", text: "Tracking Shot (Follow/Lead): The drone follows a moving subject (like a car or person) from behind, in front, or the side." },
+            { category: "Drone Shots", title: "Cinematic Orbit (360 Wraparound)", text: "The Orbit (360 Wraparound): The drone circles a subject, keeping it centered for a dramatic effect." },
+            { category: "Drone Shots", title: "Cinematic Dronie", text: "The Dronie: A drone 'selfie' starting close on a subject, then flying backward and upward to reveal the surroundings." },
+            { category: "Drone Shots", title: "Cinematic Top-Down / Bird's-Eye", text: "Top-Down / Bird's-Eye View: Camera pointed 90° straight down, creating a graphic, map-like perspective." },
+            { category: "Drone Shots", title: "Reveal Shot / Unveiling", text: "Reveal Shot / Unveiling: Moving from behind an object (like a tree or building) to show a new, expansive scene." },
+            { category: "Drone Shots", title: "Cinematic Tracking / Follow Shot", text: "Tracking / Follow Shot: The drone follows a moving subject (car, person) to track their movement through a landscape." },
+            { category: "Drone Shots", title: "Parallax / Vertigo Effect", text: "Parallax / Vertigo Effect: Moving sideways or backward while keeping the camera locked on a subject, creating a shift in perspective between foreground and background." }
         ];
 
         const grid = document.getElementById('grid');
