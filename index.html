@@ -90,13 +90,15 @@
         <button class="filter-btn" data-filter="Drone Shots">Drone Shots</button>
         <button class="filter-btn" data-filter="Elevenlabs">Elevenlabs</button>
         <button class="filter-btn" data-filter="Image Generation">Image Generation</button>
+        <button class="filter-btn" data-filter="Show steps / Instruciton manual">Show steps / Instruciton manual</button>
         <button class="filter-btn" data-filter="System Behaviours">System Behaviours</button>
+        <button class="filter-btn" data-filter="Vibe Coding / Programming">Vibe Coding / Programming</button>
         <button class="filter-btn" data-filter="Video">Video</button>
     </div>
 
     <div class="grid" id="grid"></div>
     <div class="toast" id="toast">✅ Prompt copied to clipboard!</div>
-    <p class="generated-note">Generated 2026-03-07 18:57 · 51 prompts</p>
+    <p class="generated-note">Generated 2026-03-07 19:42 · 56 prompts</p>
 
     <script>
         const prompts = [
@@ -354,6 +356,31 @@
                         "category": "Video",
                         "title": "video prompt from reference image",
                         "text": "Help me write a prompt to genearte a video based on this image with following features:\n=>example [ People are working hard builking the nation. video is in anime format ]"
+            },
+            {
+                        "category": "Vibe Coding / Programming",
+                        "title": "Mouser click co-ordinate capture",
+                        "text": "This prompt adds the specific visual \"spotlight\" effect and other details, leaving less room for misinterpretation.\nI need to implement a \"Spotlight Selector\" feature in my application.\nUI Components:\nA button with the text \"Select Point\".\nA text input field for the X coordinate.\nA text input field for the Y coordinate.\nFunctional Flow:\nThe user clicks the \"Select Point\" button.\nImmediately, the entire screen should be covered by a semi-transparent dark overlay (e.g., a black layer with 50% opacity). This is the \"spotlight\" or \"dimming\" effect.\nThe mouse cursor should change from the default pointer to a crosshair (+) to indicate selection mode.\nThe user moves the crosshair cursor to the desired location on the screen and clicks once.\nUpon this click, the application must:\nCapture the absolute screen coordinates (X and Y) of the click location.\nImmediately remove the semi-transparent overlay, returning the screen to its normal appearance.\nChange the cursor back to the default pointer.\nPopulate the captured coordinates into the X and Y text input fields."
+            },
+            {
+                        "category": "Vibe Coding / Programming",
+                        "title": "Editable Label",
+                        "text": "Make Inline editable label or in-place editing for a label/title [xxx]"
+            },
+            {
+                        "category": "Vibe Coding / Programming",
+                        "title": "Modern GUI tempelate",
+                        "text": "Backgroun: Dark theme (#2b2b2b background)\nWindow size: 400x200 pixels\nText Labels: White\nButtons: Blue simple modern"
+            },
+            {
+                        "category": "Vibe Coding / Programming",
+                        "title": "Search and highlight",
+                        "text": "Implement a case-insensitive, regex-based search highlight system for a Tkinter text display using the widget’s native tag styling. Find all matches of the search term with re.compile(re.escape(search_term), re.IGNORECASE), then apply a dedicated Tkinter text tag to each matched range. Configure that tag with a yellow background and suitable foreground contrast so matches appear visually highlighted across themes without changing the text content itself. Clear previous highlight tags before applying new ones, and ensure all occurrences are highlighted reliably. Goal: Tkinter native yellow background highlight."
+            },
+            {
+                        "category": "Show steps / Instruciton manual",
+                        "title": "Concise and straight forward steps",
+                        "text": "be consise as much as possible \nfor example if the question is how to make static ip of raspberry pi\nanswer should be like this\n\nSSH to this IP of raspberry\nsudo nano /etc/dhcpcd.conf\ninterface eth0\nstatic ip_address=192.168.2.222/24\nstatic routers=192.168.2.254\nstatic domain_name_servers=192.168.2.254\nsave the editor\nrestart (custom commands here)"
             }
 ];
 
