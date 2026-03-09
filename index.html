@@ -90,6 +90,7 @@
         <button class="filter-btn" data-filter="Drone Shots">Drone Shots</button>
         <button class="filter-btn" data-filter="Elevenlabs">Elevenlabs</button>
         <button class="filter-btn" data-filter="Image Generation">Image Generation</button>
+        <button class="filter-btn" data-filter="Mantra Mavericks">Mantra Mavericks</button>
         <button class="filter-btn" data-filter="Show steps / Instruciton manual">Show steps / Instruciton manual</button>
         <button class="filter-btn" data-filter="System Behaviours">System Behaviours</button>
         <button class="filter-btn" data-filter="Vibe Coding / Programming">Vibe Coding / Programming</button>
@@ -98,7 +99,7 @@
 
     <div class="grid" id="grid"></div>
     <div class="toast" id="toast">✅ Prompt copied to clipboard!</div>
-    <p class="generated-note">Generated 2026-03-07 19:42 · 56 prompts</p>
+    <p class="generated-note">Generated 2026-03-09 21:09 · 58 prompts</p>
 
     <script>
         const prompts = [
@@ -381,6 +382,16 @@
                         "category": "Show steps / Instruciton manual",
                         "title": "Concise and straight forward steps",
                         "text": "be consise as much as possible \nfor example if the question is how to make static ip of raspberry pi\nanswer should be like this\n\nSSH to this IP of raspberry\nsudo nano /etc/dhcpcd.conf\ninterface eth0\nstatic ip_address=192.168.2.222/24\nstatic routers=192.168.2.254\nstatic domain_name_servers=192.168.2.254\nsave the editor\nrestart (custom commands here)"
+            },
+            {
+                        "category": "Mantra Mavericks",
+                        "title": "Re-analyze the logic",
+                        "text": "Now argue against everything you just said. Find the weakest points in your logic"
+            },
+            {
+                        "category": "Mantra Mavericks",
+                        "title": "Skeptical expert",
+                        "text": "Now act as a skeptical expert trying to disprove what you just said. Identify the 3 most vulnerable points in your reasoning and explain specifically why they might fail"
             }
 ];
 
