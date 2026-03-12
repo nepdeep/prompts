@@ -99,7 +99,7 @@
 
     <div class="grid" id="grid"></div>
     <div class="toast" id="toast">✅ Prompt copied to clipboard!</div>
-    <p class="generated-note">Generated 2026-03-11 10:53 · 59 prompts</p>
+    <p class="generated-note">Generated 2026-03-12 14:30 · 61 prompts</p>
 
     <script>
         const prompts = [
@@ -116,11 +116,6 @@
             {
                         "category": "Cinematic Shots",
                         "title": "Drone Push-In (copy)",
-                        "text": "Smooth forward drone shot approaching subject, parallax, cinematic realism"
-            },
-            {
-                        "category": "Cinematic Shots",
-                        "title": "Drone Push-In (copy) (copy)",
                         "text": "Smooth forward drone shot approaching subject, parallax, cinematic realism"
             },
             {
@@ -196,6 +191,11 @@
             {
                         "category": "Developer Tools",
                         "title": "Markdown Text Only",
+                        "text": "Create a condensed markup prompt for the recommendation above"
+            },
+            {
+                        "category": "Developer Tools",
+                        "title": "Markdown Text Only for imporvements",
                         "text": "Create a condensed markup prompt for option 1. Improvise the GUI (think out of the box and make it interesting for user). What features would you recommend to add to make this even better?"
             },
             {
@@ -397,6 +397,16 @@
                         "category": "Mantra Mavericks",
                         "title": "Skeptical expert",
                         "text": "Now act as a skeptical expert trying to disprove what you just said. Identify the 3 most vulnerable points in your reasoning and explain specifically why they might fail"
+            },
+            {
+                        "category": "Developer Tools",
+                        "title": "Improvise the uploaded html code",
+                        "text": "<task>\nAudit uploaded HTML and implement UX/UI improvements.\n</task>\n\n<role>\nSenior UX/UI designer + frontend engineer + product thinker\n</role>\n\n<input>\nAn example HTML file uploaded by the user\n</input>\n\n<goals>\n- Improve visual quality\n- Improve usability\n- Improve responsiveness\n- Improve accessibility\n- Improve clarity and polish\n- Preserve core functionality unless UX clearly benefits from change\n</goals>\n\n<audit_areas>\n- layout consistency\n- spacing/alignment\n- typography\n- color harmony\n- navigation clarity\n- interaction quality\n- perceived performance\n- mobile responsiveness\n- accessibility\n- overall premium feel\n</audit_areas>\n\n<instructions>\n1. Deeply review the uploaded HTML.\n2. Identify weak points and missed opportunities.\n3. Group findings into:\n   - Critical fixes\n   - High-impact UX improvements\n   - Visual polish improvements\n   - Feature ideas\n   - Mobile/responsive improvements\n   - Accessibility improvements\n4. For each finding, state:\n   - issue\n   - why it matters\n   - recommended fix\n5. Then rewrite and return the full improved code.\n</instructions>\n\n<output_format>\n1. Improvement report table:\n   Priority | Issue | Why it matters | Recommended fix\n2. Fully improved complete HTML file\n</output_format>\n\n<constraints>\n- Return full code, no partial snippets\n- Keep functionality intact unless improvement is justified\n- Make it more modern, elegant, intuitive, and polished\n- Add thoughtful UX details like hover states, transitions, hierarchy, feedback states, labels, and empty states where useful\n- Improve both appearance and user experience\n</constraints>"
+            },
+            {
+                        "category": "Vibe Coding / Programming",
+                        "title": "Brainstrom party game - a new game from example upload",
+                        "text": "Take this example of attached game.\nimprovise the calibration with some play in the beginning to translate into a smooth movement during the game.\nchange the current game to a unique game (you can think of something amazing) where multiple players can play the game . be createive and introduce maximum fun in the game that can be played in the party"
             }
 ];
 
