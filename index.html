@@ -84,6 +84,8 @@
     <div class="filters" id="filters">
         <button class="filter-btn active" data-filter="All">All</button>
         <button class="filter-btn" data-filter="App-Restrnt">App-Restrnt</button>
+        <button class="filter-btn" data-filter="Claude and Codex">Claude and Codex</button>
+        <button class="filter-btn" data-filter="Docker Container">Docker Container</button>
         <button class="filter-btn" data-filter="Generic Universal DRK">Generic Universal DRK</button>
         <button class="filter-btn" data-filter="JPT">JPT</button>
         <button class="filter-btn" data-filter="Reporting">Reporting</button>
@@ -93,7 +95,7 @@
 
     <div class="grid" id="grid"></div>
     <div class="toast" id="toast">✅ Prompt copied to clipboard!</div>
-    <p class="generated-note">Generated 2026-05-16 19:30 · 38 prompts</p>
+    <p class="generated-note">Generated 2026-05-28 18:44 · 41 prompts</p>
 
     <script>
         const prompts = [
@@ -286,6 +288,21 @@
                         "category": "JPT",
                         "title": "Copy fix from older version",
                         "text": "The  [appname] has a bug that cannot [connect to device]. The [connection] is working properly on older app [attachedName]. Fix the bug with the help of the older reference."
+            },
+            {
+                        "category": "Docker Container",
+                        "title": "Install script with docker container files",
+                        "text": "Help me create Docker files so I can install this project on Linux with one command.\nI need:\n\nDockerfile (or one for each service if needed)\ndocker-compose.yml\ninstall.sh that installs Docker if missing, then builds and starts everything\n.dockerignore and a short README.md\n\nFirst, look at my files and tell me:\n\nWhat language/framework each part uses and the entry point\nWhat ports they use\nWhere data is saved (so it doesn't get lost on restart)\nIf the backend already serves the frontend or if they need to run separately\nAnything in my code that needs to change to work in Docker\n\nThen create all the files. Goal: I run bash install.sh and the app works, reachable on my network, and data stays after restarts."
+            },
+            {
+                        "category": "Claude and Codex",
+                        "title": "Opus 4.7",
+                        "text": "claude --model claude-opus-4-7"
+            },
+            {
+                        "category": "Claude and Codex",
+                        "title": "Sonnet 4.6",
+                        "text": "claude --model claude-sonnet-4-6"
             }
 ];
 
